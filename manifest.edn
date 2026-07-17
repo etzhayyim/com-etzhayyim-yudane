@@ -43,8 +43,8 @@
   {:lex/id "consentCapability"}]
 
  :actor/seed
- {:seed/file "kotoba/seed.edn"
-  :seed/ontology "kotoba/ontology.yudane.edn"
+ {:seed/file "resources/yudane/kotoba/seed.edn"
+  :seed/ontology "resources/yudane/kotoba/ontology.yudane.edn"
   :seed/sourcing :representative
   :seed/classes [:presence-shift :defer-flexible :schedule-known :seasonal-prep]}
 

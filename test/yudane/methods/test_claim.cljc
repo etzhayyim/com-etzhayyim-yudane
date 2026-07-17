@@ -6,7 +6,7 @@
             [yudane.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/yudane/kotoba/seed.edn")
 (defn- claims [] (c/from-offers (ye/offers seed-path)))
 
 (deftest only-consented-offers-emit-claims

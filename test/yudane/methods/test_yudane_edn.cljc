@@ -5,7 +5,7 @@
   (:require [yudane.methods.yudane-edn :as ye]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/yudane/kotoba/seed.edn")
 
 (deftest loads-offers
   (let [os (ye/offers seed-path)]

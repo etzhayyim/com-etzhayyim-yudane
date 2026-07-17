@@ -21,7 +21,7 @@
      ([] (fire nil))
      ([log-path]
       (let [target (or log-path @log-default)
-            offers (edn/offers (str (io/file (actor-dir) "kotoba" "seed.edn")))
+            offers (edn/offers (str (io/file (actor-dir) "resources" "yudane" "kotoba" "seed.edn")))
             cycle (count (k/read-log target))
             r (autorun/beat {:offers offers
                              :tx-id (str "yudane-beat-" cycle) :as-of (str "cycle-" cycle)
