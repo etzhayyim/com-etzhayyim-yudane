@@ -1,12 +1,12 @@
 #!/usr/bin/env bb
 ;; 委 yudane — intention-ledger (content-addressed commit-DAG) tests.
-;; Run:  bb --classpath 20-actors 20-actors/yudane/methods/test_kotoba.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_kotoba.cljc
 (ns yudane.methods.test-kotoba
   (:require [yudane.methods.kotoba :as k]
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def ^:private tmp "20-actors/yudane/data/test-ledger.kotoba.edn")
+(def ^:private tmp "data/test-ledger.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 
 (def d1 [[":db/add" "yudane-offer:presence-wfh-01" ":yudane.obs/verdict" ":consented"]

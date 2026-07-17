@@ -1,11 +1,11 @@
 #!/usr/bin/env bb
 ;; 委 yudane — seed loader tests.
-;; Run:  bb --classpath 20-actors 20-actors/yudane/methods/test_yudane_edn.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_yudane_edn.cljc
 (ns yudane.methods.test-yudane-edn
   (:require [yudane.methods.yudane-edn :as ye]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/yudane/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 
 (deftest loads-offers
   (let [os (ye/offers seed-path)]

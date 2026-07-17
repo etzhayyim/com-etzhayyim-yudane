@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 委 yudane — heartbeat (idempotent-by-content) tests.
-;; Run:  bb --classpath 20-actors 20-actors/yudane/methods/test_autorun.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_autorun.cljc
 (ns yudane.methods.test-autorun
   (:require [yudane.methods.yudane-edn :as ye]
             [yudane.methods.autorun :as ar]
@@ -8,8 +8,8 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/yudane/kotoba/seed.edn")
-(def ^:private tmp "20-actors/yudane/data/test-autorun.kotoba.edn")
+(def seed-path "kotoba/seed.edn")
+(def ^:private tmp "data/test-autorun.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 (defn- offers [] (ye/offers seed-path))
 

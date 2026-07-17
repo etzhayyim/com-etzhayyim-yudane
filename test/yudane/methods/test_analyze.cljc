@@ -1,13 +1,13 @@
 #!/usr/bin/env bb
 ;; 委 yudane — analyze/consent/datoms tests (incl. consent + privacy invariants).
-;; Run:  bb --classpath 20-actors 20-actors/yudane/methods/test_analyze.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_analyze.cljc
 (ns yudane.methods.test-analyze
   (:require [yudane.methods.yudane-edn :as ye]
             [yudane.methods.analyze :as a]
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/yudane/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- offers [] (ye/offers seed-path))
 (defn- row [id] (first (filter #(= id (get % "id")) (get (a/analyze (offers)) "offers"))))
 

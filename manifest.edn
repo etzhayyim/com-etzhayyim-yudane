@@ -64,6 +64,6 @@
 
  :actor/tests
  {:runner "babashka"
-  :cmd "./20-actors/yudane/run_tests.sh"
+  :cmd "./run_tests.sh"
   :suites ["methods/test_yudane_edn.cljc" "methods/test_analyze.cljc"
            "methods/test_kotoba.cljc" "methods/test_autorun.cljc"]}}

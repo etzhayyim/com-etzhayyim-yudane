@@ -1,12 +1,12 @@
 #!/usr/bin/env bb
 ;; 委 yudane — claim-emitter tests (the 澪 mio seam shape; consent-bound + content-free).
-;; Run:  bb --classpath 20-actors 20-actors/yudane/methods/test_claim.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_claim.cljc
 (ns yudane.methods.test-claim
   (:require [yudane.methods.yudane-edn :as ye]
             [yudane.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/yudane/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- claims [] (c/from-offers (ye/offers seed-path)))
 
 (deftest only-consented-offers-emit-claims
