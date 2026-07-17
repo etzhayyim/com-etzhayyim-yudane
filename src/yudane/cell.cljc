@@ -12,7 +12,7 @@
             [yudane.methods.kotoba :as k]
             #?(:clj [clojure.java.io :as io])))
 
-#?(:clj (defn- actor-dir [] (-> (io/resource "yudane/cell.cljc") io/file .getParentFile)))
+#?(:clj (defn- actor-dir [] (-> (io/resource "yudane/cell.cljc") io/file .getParentFile .getParentFile .getParentFile)))
 #?(:clj (def ^:private log-default
           (delay (str (io/file (actor-dir) "data" "persisted" "yudane.intention.kotoba.edn")))))
 
