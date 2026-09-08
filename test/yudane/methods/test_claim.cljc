@@ -2,7 +2,7 @@
 ;; 委 yudane — claim-emitter tests (the 澪 mio seam shape; consent-bound + content-free).
 ;; Run:  bb --classpath src:test test/yudane/methods/test_claim.cljc
 (ns yudane.methods.test-claim
-  (:require [yudane.methods.yudane-edn :as ye]
+  (:require [kotoba.lang.text] [yudane.methods.yudane-edn :as ye]
             [yudane.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
@@ -19,7 +19,7 @@
     (is (= "yudane" (:source-actor cl)))
     (is (= :intention (:flow-class cl)))
     (is (number? (:order-delta-kwh cl)))
-    (is (not (clojure.string/blank? (:baseline-method cl))))
+    (is (not (kotoba.lang.text/blank? (:baseline-method cl))))
     (is (and (>= (:additionality cl) 0.0) (<= (:additionality cl) 1.0)))
     (is (keyword? (:measurement-source cl)))
     (is (string? (:double-count-key cl)))

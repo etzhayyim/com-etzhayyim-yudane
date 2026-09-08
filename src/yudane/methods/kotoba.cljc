@@ -9,7 +9,7 @@
 
   The ledger is content-free by construction (the datoms carry only intention CLASS +
   aggregate cohort signals); it can never become a who-intends-what registry."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])
