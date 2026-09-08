@@ -20,7 +20,7 @@
         individual could be identified); no :yudane.person/* / :score / :denunciation /
         :surveil attribute exists (the surveillance degeneration series is unrepresentable).
     G4  translation only — yudane never controls; no :yudane/dispatch is emitted."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── consent params ───────────────────────────────────────────────────────────
 

@@ -4,7 +4,7 @@
 (ns yudane.methods.test-analyze
   (:require [yudane.methods.yudane-edn :as ye]
             [yudane.methods.analyze :as a]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def seed-path "resources/yudane/kotoba/seed.edn")
