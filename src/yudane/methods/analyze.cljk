@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 委 yudane — analyze → datoms → coverage (clj-native, pure stdlib).
 (ns yudane.methods.analyze
   "委 yudane — the Human Intention Energy Engine core (Energy Order Protocol).

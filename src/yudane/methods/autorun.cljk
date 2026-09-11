@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 委 yudane — autonomous heartbeat: translate → append consent verdicts to the ledger.
 (ns yudane.methods.autorun
   "autorun.cljc — 委 yudane deterministic, idempotent-by-content heartbeat

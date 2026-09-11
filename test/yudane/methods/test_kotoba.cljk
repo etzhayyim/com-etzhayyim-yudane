@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 委 yudane — intention-ledger (content-addressed commit-DAG) tests.
-;; Run:  bb --classpath src:test test/yudane/methods/test_kotoba.cljk
+;; Run:  kbb --classpath src:test test/yudane/methods/test_kotoba.cljk
 (ns yudane.methods.test-kotoba
   (:require [yudane.methods.kotoba :as k]
             [clojure.java.io :as io]
