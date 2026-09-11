@@ -35,8 +35,8 @@ consented ⇒ aggregate flex offer crosses to tawami/mio;  else nothing.
 
 ```bash
 ./20-actors/yudane/run_tests.sh                                   # 21 tests / 96 assertions
-bb --classpath 20-actors 20-actors/yudane/methods/analyze.cljc    # render the content-free intention ledger
-bb --classpath 20-actors 20-actors/yudane/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
+kbb --classpath 20-actors 20-actors/yudane/methods/analyze.cljc    # render the content-free intention ledger
+kbb --classpath 20-actors 20-actors/yudane/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
 ```
 
 OBSERVATION + TRANSLATION ONLY. Content-free; never a who-intends-what registry.

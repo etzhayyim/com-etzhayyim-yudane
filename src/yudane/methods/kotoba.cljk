@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 委 yudane — intention-ledger kotoba Datom-log writer (content-addressed).
 (ns yudane.methods.kotoba
   "kotoba.cljc — 委 yudane append-only INTENTION LEDGER writer (on ADR-2605262130 +

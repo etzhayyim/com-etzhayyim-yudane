@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 委 yudane — claim emitter (the 澪 mio suite seam).
 (ns yudane.methods.claim
   "claim.cljc — 委 yudane → 澪 mio flow-improvement CLAIM emitter (Energy Order
