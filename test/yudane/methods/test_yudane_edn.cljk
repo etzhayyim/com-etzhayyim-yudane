@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 委 yudane — seed loader tests.
-;; Run:  bb --classpath src:test test/yudane/methods/test_yudane_edn.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_yudane_edn.cljk
 (ns yudane.methods.test-yudane-edn
   (:require [yudane.methods.yudane-edn :as ye]
             [clojure.test :refer [deftest is run-tests]]))

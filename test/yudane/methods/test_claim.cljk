@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 委 yudane — claim-emitter tests (the 澪 mio seam shape; consent-bound + content-free).
-;; Run:  bb --classpath src:test test/yudane/methods/test_claim.cljc
+;; Run:  bb --classpath src:test test/yudane/methods/test_claim.cljk
 (ns yudane.methods.test-claim
   (:require [kotoba.lang.text] [yudane.methods.yudane-edn :as ye]
             [yudane.methods.claim :as c]
